@@ -1,2 +1,0 @@
-# misitio
-Mi sitio Bootstrap
