@@ -47,7 +47,7 @@ nav ul {
 }
 
 nav.black ul {
-      background: rgba(102, 72, 177, .8);
+      background: rgba(20, 150, 177, .8);
 }
 
 nav ul li {
@@ -397,9 +397,9 @@ padding: 1rem;
 }
 
 .carousel-inner img {
-  width: 300%;
+  width: 400%;
   height: 100%;
-  transform: translateX(-33%);
+  transform: translateX(-37.5%);
 }
 
 
