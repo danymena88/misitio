@@ -8,6 +8,14 @@ html, body {
 } 
 
 
+#footercollapse {
+  display: none;
+}
+
+#mobile {
+  display: none;
+}
+
 .hero-image {
   background-position: center;
   background-repeat: no-repeat;
@@ -24,6 +32,19 @@ html, body {
   
 }
 
+.hero-imagem {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/background-mobile.jpg");
+  max-width: 100%;
+  border-bottom: 3px solid #7931fd;
+  
+}
 
 .smokewhite {
   background-color: #d5d5d5;
@@ -37,11 +58,6 @@ html, body {
 box-shadow: 0 3px 6px rgba(0,0,0,0.3);
 -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.3);
 -moz-box-shadow: 0 3px 6px rgba(0,0,0,0.3);
-}
-
-
-#mobile {
-  display: none;
 }
 
 
@@ -62,6 +78,7 @@ nav {
       width: 100%;
       line-height: 60px;
       z-index: 20;
+      
 }
 
 nav ul {
@@ -95,9 +112,8 @@ nav ul li a {
 
 .menu-icon {
       line-height: 40px;
-      width: 100%;
       background: #6648b1;
-      text-align: right;
+      text-align: center;
       box-sizing: border-box;
       padding: 15px 24px;
       cursor: pointer;
@@ -105,13 +121,28 @@ nav ul li a {
       display: none;
       padding-top: 1.2em;
       padding-right: 2em;
+      width: 100%;
+      text-align: right;
 }
 
+#face, #insta, #pinte, #you, #group {
+  position: absolute;
+}
 
 .socials a {
   font-size: 2em;
-  
+ }
+
+.socials a {
+   color: #7931fd;
+
 }
+
+.socials a:hover {
+ color: #d5d5d5;
+  font-size: 2.5em;
+}
+
 
 .socials {
   display: flex;
@@ -129,6 +160,7 @@ nav ul li a {
   align-items: center;
   justify-content: space-between;
   width: 68%;
+  overflow: hidden;
 }
 
 .caption {
@@ -166,7 +198,7 @@ color: #d5d5d5;
  }
 
 .btn-primary:hover {
-  background-color: #e5a861;
+  background-color: #d5d5d5;
   border: 2px solid #a591d6;
 }
 
@@ -211,7 +243,6 @@ color: #d5d5d5;
 }
 
 .flexdos {
-  max-width: 60%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -324,6 +355,11 @@ border-radius: 30px;
   border-color: transparent;
 }
 
+.modulos {
+  width: 100%;
+  border-color: transparent;
+}
+
 .gif  {
   max-width: 100%
 }
@@ -337,11 +373,6 @@ border-radius: 30px;
  padding: 3rem;
 }
 
-.fa-facebook, .fa-twitter, .fa-instagram, .fa-pinterest, .fa-youtube  {
-color: #2ee4b7;
-position: absolute;
-}
-
 .fa-youtube-square {
 color: #bb0000;
 font-size: 4em;
@@ -352,16 +383,9 @@ font-size: 4em;
 }
 
 
-.fa-facebook:hover,
-.fa-twitter:hover, .fa-instagram:hover, .fa-youtube:hover, .fa-pinterest:hover  {
-  color: #d5d5d5;
-  font-size: 1.5em;
-}
-
 footer {
-background-color: #3f3f3f;
 color: #d5d5d5;
-padding-top: 2rem;
+padding-top: 1rem;
 }
 
 hr.light {
@@ -382,21 +406,61 @@ margin-top: .8rem;
 margin-bottom: 1rem;
 }
 
+#cardblog2 {
+  width: 45px;
+    height: auto;
+    position: absolute;
+    top: 20;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-59%);
+    
+}
+
+.fa-blogger {
+  color: #ff8400;
+}
+
+.flexfooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.flexfooter a{
+  margin: 0 .5em 0 .5em;
+}
+
+.jumbotron {
+background: #2ee4b7;
+color: #FFF;
+border-radius: 0px;
+}
+.jumbotron-sm { padding-top: 24px;
+padding-bottom: 24px; }
+.jumbotron small {
+color: #FFF;
+}
+.h1 small {
+font-size: 24px;
+}
 
 
+#ckout {
+  background-color: #ff6f00;
+  border: 2px solid yellow;
+  font-size: 1.5rem;
+}
 
 /*---Youtube playlist --*/
 
 .vid-container {
   position: relative;
-  padding-bottom: 40%;
   padding-top: 30px; 
-  height: 0; 
-}
+  }
 
 
 .vid-list-container {
-  width: 92%;
+  width: 100%;
   overflow: hidden;
   margin-top: 20px;
   padding-bottom: 20px;
@@ -405,7 +469,6 @@ margin-bottom: 1rem;
 .vid-list {
   width: 1344px;
   position: relative;
-  top:0;
   left: 0;
 }
 
@@ -413,7 +476,7 @@ margin-bottom: 1rem;
   display: block;
   width: 148px;
   height: 140px;
-  float: left;
+  float: right;
   margin: 0;
   padding: 10px;
 }
@@ -433,7 +496,7 @@ margin-bottom: 1rem;
    }
 
 .vid-item .desc {
-  color: #7931fd;
+  color: #2ee4b7;
   font-size: 15px;
   margin-top:5px;
 }
@@ -447,7 +510,7 @@ margin-bottom: 1rem;
 .arrow-left {
   color: #2ee4b7;
   position: absolute;
-  background: rgba(200,200,200,.05);
+  background: rgba(200,200,200,.2);
   padding: 15px;
   left: -25px;
   top: -130px;
@@ -458,14 +521,13 @@ margin-bottom: 1rem;
 .arrow-right {
   color: #2ee4b7;
   position: absolute;
-  background: rgba(200,200,200,.05);
+  background: rgba(200,200,200,.2);
   padding: 15px;
   right: -25px;
   top: -130px;
   z-index:100;
   cursor: pointer;
 }
-
 
 
 
@@ -494,9 +556,34 @@ margin-bottom: 1rem;
 }
 
 
+@media (max-width: 1122px) {
+.caption {
+  text-align: left;
+  max-width: 70%;
+}
+
+
+.caption h1{
+  color: #fff;
+  font-size: 300%;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 15px #000;
+
+     }
+
+     .caption h3{
+  
+  font-size: 130%;
+  
+     }
+
+.btn-primary {
+  font-size: 1em; 
+ }
 
 
 
+   }
 
 
 @media (max-width: 992px) {
@@ -510,6 +597,17 @@ margin-bottom: 1rem;
   text-align: left;
   max-width: 50%;
 }
+
+#imagen1, #imagen2 {
+  max-width: 60%;
+}
+
+
+#cont1 {
+  padding: 1rem;
+}
+
+
 
 
 
@@ -594,9 +692,13 @@ margin-bottom: 1rem;
 
 
       
+#footercollapse {
+  display: inline;
+}
 
-
-
+#footer1 {
+  display: none;
+}
 
 
 
@@ -649,16 +751,19 @@ margin-bottom: 1rem;
 @media (max-width: 576px) {
   
 
-#mobile {
-  display: inline;
+
+.container {
+  max-width: 100%!important;
+  padding: 0.2rem!important;
 }
 
-#mobileone {
-  display: none;
+#vid_frame {
+  max-width: 100%
 }
 
-
-
+.fb-group a {
+  max-width: 100%;
+}
 
 
 .caption h1{
@@ -707,9 +812,17 @@ margin-bottom: 1rem;
   transform: translateX(-37.5%);
 }
 
+#cont1 {
+  padding: .2rem!important;
+}
 
+#pc {
+  display: none;
+}
 
-
+#mobile {
+  display: inline-flex;
+}
 
 
 
@@ -790,8 +903,7 @@ div[class*='col-'] {
 }
 
 .wrap {
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
+    border-radius: 4px;
 }
 
 a:focus,
@@ -802,11 +914,12 @@ a:active {
 }
 
 .panel {
-  border-width: 0 0 1px 0;
+  border-width: 1px 1px 0 0;
   border-style: solid;
-  border-color: #fff;
+  border-color: #2b353d;
   background: none;
-  box-shadow: none;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  margin-bottom: .5rem;
 }
 
 .panel:last-child {
@@ -826,11 +939,12 @@ a:active {
 }
 
 .panel-heading {
-  background-color: #009688;
+  
   border-radius: 0;
   border: none;
   color: #fff;
   padding: 0;
+  
 }
 
 .panel-title a {
@@ -842,9 +956,6 @@ a:active {
   font-weight: 400;
 }
 
-.panel-body {
-  background: #fff;
-}
 
 .panel:last-child .panel-body {
   border-radius: 0 0 4px 4px;
@@ -859,12 +970,19 @@ a:active {
   border-radius: 0;
   transition: border-radius linear 0s;
 }
-/* #bs-collapse icon scale option */
+
+
+
+
+
+     .panel-heading::before {
+        display: none;
+      }
 
 .panel-heading a:before {
-  content: '\e146';
+  font-family: "Font Awesome 5 Free";
+   content: "ᐱ";
   position: absolute;
-  font-family: 'Material Icons';
   right: 5px;
   top: 10px;
   font-size: 24px;
@@ -873,16 +991,16 @@ a:active {
 }
 
 .panel-heading.active a:before {
-  content: ' ';
+  content: "";
   transition: all 0.5s;
   transform: scale(0);
 }
 
 #bs-collapse .panel-heading a:after {
-  content: ' ';
+  content: "ᐱ";
   font-size: 24px;
   position: absolute;
-  font-family: 'Material Icons';
+  font-family: "Font Awesome 5 Free";
   right: 5px;
   top: 10px;
   transform: scale(0);
@@ -890,17 +1008,17 @@ a:active {
 }
 
 #bs-collapse .panel-heading.active a:after {
-  content: '\e909';
+  content: "";
   transform: scale(1);
   transition: all 0.5s;
 }
-/* #accordion rotate icon option */
 
+/* #accordion rotate icon option */
 #accordion .panel-heading a:before {
-  content: '\e316';
+  font-family: "Font Awesome 5 Free";
+  content: "ᐱ";
   font-size: 24px;
   position: absolute;
-  font-family: 'Material Icons';
   right: 5px;
   top: 10px;
   transform: rotate(180deg);
@@ -911,7 +1029,7 @@ a:active {
   transform: rotate(0deg);
   transition: all 0.5s;
 }
-
+ 
 
 
 
