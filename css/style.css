@@ -625,24 +625,11 @@ font-size: 24px;
   cursor: pointer;
 }
 
-#vid_frame2 {
-  display: none;
-}
 
-#vid_frame3 {
-  display: none;
-}
 
 
 
 /*---Media Queries --*/
-
-
-@media (max-width: 1521px) {
-
-
-
-}
 
 
 
@@ -671,13 +658,8 @@ font-size: 24px;
   padding-top: 6rem!important;
 }
 
-#vid_frame {
-  display: none;
-}
 
-#vid_frame2 {
-  display: inline;
-}
+
 
 }
 
@@ -945,13 +927,7 @@ padding-right: 0!important;
   border-top-right-radius: 0px;
 }
 
-#vid_frame2 {
-  display: none;
-}
 
-#vid_frame3 {
-  display: inline;
-}
 
 
 
@@ -1020,10 +996,6 @@ padding-right: 0!important;
 .container {
   max-width: 100%!important;
   padding: 0.2rem!important;
-}
-
-#vid_frame {
-  max-width: 100%
 }
 
 .fb-group a {
