@@ -36,12 +36,16 @@ $(document).ready(function() {
   setTimeout(function () {
     $('.count5').counter();
   }, 3000);
+
+
 });
 
 
 
+
+
  $(document).ready(function() {
-            $(".menu-icon").on("focus", function() {
+            $(".menu-icon").on("click", function() {
                   $("nav ul").toggleClass("showing");
             });
       });
@@ -60,6 +64,7 @@ $(document).ready(function() {
       });
 
 
+
 $(document).ready(function() {
   $('.collapse.in').prev('.panel-heading').addClass('active');
   $('#accordion, #bs-collapse')
@@ -70,6 +75,7 @@ $(document).ready(function() {
       $(a.target).prev('.panel-heading').removeClass('active');
     });
 });
+
 
 
      $(document).ready(function () {
